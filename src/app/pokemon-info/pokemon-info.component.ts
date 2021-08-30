@@ -10,7 +10,7 @@ export class PokemonInfoComponent implements OnInit {
   pokemon_id: any;
 
   constructor(private actRoute: ActivatedRoute) {
-    this.pokemon_id = this.actRoute.snapshot.params;
+    this.pokemon_id = this.actRoute.snapshot.params.id;
     console.log(this.pokemon_id);
   }
   ngOnInit() {}
